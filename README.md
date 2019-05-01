@@ -1,9 +1,18 @@
 ### Blog
 
- - [Effective Java](https://github.com/eziceice/blog/issues/2)
+ - [Effective Java][1]
    
- - [Springboot](https://github.com/eziceice/blog/issues/3)
+ - [Springboot][2]
  
- - [Http详解](https://github.com/eziceice/blog/issues/1)
+ - [Http详解][3]
  
- - [Python](https://github.com/eziceice/blog/issues/4)
+ - [Python][4]
+
+ - [DNS][5]
+ 
+ [1]: https://github.com/eziceice/blog/issues/2
+ [2]: https://github.com/eziceice/blog/issues/3
+ [3]: https://github.com/eziceice/blog/issues/1
+ [4]: https://github.com/eziceice/blog/issues/4
+ [5]: https://github.com/eziceice/blog/issues/5
+ 
