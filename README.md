@@ -7,7 +7,7 @@
  - [Python][4]
  
  ### *Network*
- - [Http详解][3]
+ - [HTTP][3]
  - [DNS][5]
 
 ### *Web Framework*
