@@ -1,15 +1,20 @@
-### Blog
+
+## Blog
+
+### *Programming Languages* 
 
  - [Effective Java][1]
-   
- - [Springboot][2]
- 
- - [Http详解][3]
- 
  - [Python][4]
-
- - [DNS][5]
  
+ ### *Network*
+ - [HTTP][3]
+ - [DNS][5]
+
+### *Web Framework*
+ - [SpringBoot][2]
+
+
+
  [1]: https://github.com/eziceice/blog/issues/2
  [2]: https://github.com/eziceice/blog/issues/3
  [3]: https://github.com/eziceice/blog/issues/1
