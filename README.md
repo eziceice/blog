@@ -5,6 +5,7 @@
 
  - [Effective Java][1]
  - [Python][4]
+ - [Thinking in Java][6]
  
  ### *Network*
  - [HTTP][3]
@@ -20,4 +21,5 @@
  [3]: https://github.com/eziceice/blog/issues/1
  [4]: https://github.com/eziceice/blog/issues/4
  [5]: https://github.com/eziceice/blog/issues/5
+ [6]: https://github.com/eziceice/blog/issues/6
  
