@@ -12,7 +12,7 @@
  - [DNS][5]
 
 ### *Web Framework*
- - [SpringBoot][2]
+ - [Spring Boot][2]
  - [Spring Cloud][7]
 
 
