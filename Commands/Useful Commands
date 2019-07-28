@@ -1,0 +1,91 @@
+RabbitMQ:
+	cd /usr/local/Cellar/rabbitmq/3.7.15/sbin
+	./rabbitmq-server
+	Management Console: http://localhost:15672/
+
+Zipkin:
+    cd to where Zipkin.jar is
+	java -jar zipkin.jar
+	Management Comsole: http://localhost:9411/zipkin/
+	Run Zipkin with customized configuration: java -DSTORAGE_TYPE=elasticsearch -DES_HOSTS=http://127.0.0.1:9200 -jar zipkin.jar
+
+Elastic:
+	Kibana: http://localhost:5601
+		To have launchd start elastic/tap/kibana-full now and restart at login:
+	  		brew services start elastic/tap/kibana-full
+		Or, if you don't want/need a background service you can just run:
+	  	kibana
+
+Mac:
+	Command + Shift + G = Go to folder
+
+Redis：
+	brew install redis
+	brew services start redis
+	brew services stop redis
+	brew services restart redis
+
+Git:
+	Change git commit:
+		git cmd
+		find repo
+		git commit --amend
+		<esc> :wq <enter>
+
+Effective Java:
+	Pages: 236
+
+Unix:
+	/opt/freeware/src/packages/SOURCES
+	rpm -ivh gcc-go-8.2.0-2.aix7.2.ppc.rpm
+	rpm -Uvh gcc-go-8.2.0-2.aix7.2.ppc.rpm 
+	rpm -Uvh --force  *.rpm (force update)
+
+	Force delete:
+		rpm -qa | grep -i webmin (find package name)
+		rpm -e --nodeps (package name)
+
+	Install rte:
+		installp -acFXYd rpm.rte.3.0.5.52 all
+
+	Shutdown and Reboot:
+		#shutdown -Fr
+
+	Show all installed softwares:
+		smitty list_installed
+		rpm -qa
+
+	export PATH=/opt/freeware/bin (change go path)
+	echo $PATH (Print Path)
+
+	Install Go:
+		Install all the dependencies for GCCGO from http://www.bullfreeware.com/search.php?package=gcc&version=aix7.2
+		/opt/freeware/src/packages/SOURCES (Put all dependencies here)
+		rpm -ivh *.rpm (install all dependencies) If conflicts use rpm -Uvh --force  *.rpm
+		check the PATH for the AIX environment - echo $PATH
+		Add :/opt/freeware/bin in PATH by using export PATH=(original PATH above):/opt/freeware/bin
+		then copy the go project in somewhere of the server
+		export GOPATH=/X/Y/Z (project path)
+		cd $GOPATH/src/
+		go build
+		then run main (main) 
+
+	Run Go:
+		nohup main & (Run the project not in session, this will return the PID also)
+		PS -A (get the process ID, it should be as same as the application name)
+		Kill -9 PID (Kill the process - Stop the service)
+
+
+Windows:
+	Kill Process:
+		for /f "tokens=5" %a in ('netstat -aon ^| find ":8080" ^| find "LISTENING"') do taskkill /f /pid %a
+
+WebSphere:
+	in httpd.conf 
+	Add:
+		ProxyPass /filenetsatellite/applications http://localhost:9085/filenetsatellite/applications
+		ProxyPassReverse /filenetsatellite/applications http://localhost:9085/filenetsatellite/applications
+
+Maven:
+	Maven Install:
+		mvn -U -e clean install -P code-generation,compile-groovy -DskipITs -DskipTests=true -DfailIfNoTests=false -Dmaven.test.skip=true
