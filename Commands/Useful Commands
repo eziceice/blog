@@ -18,6 +18,9 @@ Elastic:
 
 Mac:
 	Command + Shift + G = Go to folder
+	Kill a process:
+		Find out the PID: sudo lsof -i:3306
+		Kill it with PID: sudo kill -9 PID
 
 Redis：
 	brew install redis
@@ -89,3 +92,7 @@ WebSphere:
 Maven:
 	Maven Install:
 		mvn -U -e clean install -P code-generation,compile-groovy -DskipITs -DskipTests=true -DfailIfNoTests=false -Dmaven.test.skip=true
+
+Gradle:
+	Repo location:
+		~/.gradle/caches/modules-2/files-2.1
