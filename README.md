@@ -7,7 +7,7 @@
  - [Python][4]
  - [Thinking in Java][6]
  - [Kotlin][8]
- - [NodeJS][11]
+ - [NodeJS][10]
  
  ### *Network*
  - [HTTP][3]
@@ -21,7 +21,7 @@
  - [Kubernetes][9]
 
 ### *Cloud*
- - [AWS][12]
+ - [AWS][11]
 
  [1]: https://github.com/eziceice/blog/issues/2
  [2]: https://github.com/eziceice/blog/issues/3
